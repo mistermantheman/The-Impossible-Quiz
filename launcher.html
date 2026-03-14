@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Launcher</title>
+<title>Loading...</title>
 </head>
+
 <body>
 
 <script>
-var win = window.open('about:blank','_blank');
+var url = "https://mistermantheman.github.io/The-Impossible-Quiz/";
+
+var win = window.open("about:blank", "_blank");
 
 var iframe = win.document.createElement("iframe");
 iframe.style.position = "fixed";
@@ -16,9 +19,11 @@ iframe.style.width = "100%";
 iframe.style.height = "100%";
 iframe.style.border = "none";
 
-iframe.src = "https://cdn.jsdelivr.net/gh/mistermantheman/The-Impossible-Quiz@main/index.html";
+iframe.src = url;
 
 win.document.body.appendChild(iframe);
+
+window.location.href = "https://www.google.com";
 </script>
 
 </body>
